@@ -1,7 +1,3 @@
-# internProject
-
-
-
 https://github.com/ashubosh/project-internshipGroup64.git
 
 Plutonium
