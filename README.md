@@ -76,7 +76,13 @@ College details
     "name": "xyz",
     "fullName": "Some Institute of Engineering and Technology",
     "logoLink": "some public s3 link for a college logo",
-    "interns": [
+   
+        "_id": "7898d0251a53ecaeea02a623",
+        "name": "Sukruti",
+        "email": "dummy.email@miet.ac.in",
+        "mobile": "9191919191"
+      },
+      { "interns": [
       {
          "mobile": "8888888888"
       },
@@ -85,12 +91,6 @@ College details
         "name": "John Doe",
         "email": "john.doe@miet.ac.in",
         "mobile": "9999999999"
-      },
-      {
-        "_id": "7898d0251a53ecaeea02a623",
-        "name": "Sukruti",
-        "email": "dummy.email@miet.ac.in",
-        "mobile": "9191919191"
       },
       {
         "_id": "999803da1a53ecaeea02a07e",

@@ -27,6 +27,7 @@ const createIntern = async function(req,res){
         }
 
         const {name, email, mobile , collegeName} = requestBody
+        
 
         if(!isValid(name)){
             return res

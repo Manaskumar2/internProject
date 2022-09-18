@@ -18,6 +18,7 @@ mongoose.connect("mongodb+srv://manaskumar:iFVJhjYrsH7iars8@cluster0.s4pqkzd.mon
 app.use('/', route);
 
 app.use(function (req, res) {
+    
     return res.status(400).send({status : false, message : "path not found"})
     });
 
