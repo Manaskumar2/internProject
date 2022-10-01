@@ -1,5 +1,6 @@
 const express = require('express')
 const bodyParser = require('body-parser')
+const multer=require('multer')
 const route = require('./routes/route.js')
 const { default: mongoose } = require('mongoose')
 const app = express()
@@ -7,6 +8,8 @@ const app = express()
 
 
 app.use(bodyParser.json())
+app.use(multer().any())
+
 
 mongoose.connect("mongodb+srv://manaskumar:iFVJhjYrsH7iars8@cluster0.s4pqkzd.mongodb.net/group64Database?retryWrites=true&w=majority"
     , {
@@ -23,6 +26,6 @@ app.use(function (req, res) {
     });
 
 
-app.listen(process.env.PORT || 3000, function () {
-    console.log('Express app running on port ' + (process.env.PORT || 3000))
+app.listen(process.env.PORT || 3001, function () {
+    console.log('Express app running on port ' + (process.env.PORT || 3001))
 });

@@ -18,6 +18,7 @@ const isValidRequestBody = function (reqBody) {
 //***************************CREATE COLLEGE**********************************/
 
 const createCollege = async function (req, res) {
+    res.setHeader('Access-Control-Allow-Origin','*')
     try {
 
         const requestBody = req.body
@@ -81,6 +82,8 @@ const createCollege = async function (req, res) {
 //******************Get college**************************************/
 
 const getCollege = async (req, res)=>{
+    res.setHeader('Access-Control-Allow-Origin','*')
+    
   try {
 
     let filter = req.query
